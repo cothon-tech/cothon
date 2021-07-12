@@ -7,14 +7,21 @@ let package = Package(
         .macOS(.v10_12)
     ],
     products: [
-        .library(
+        .executable(
             name: "cothon",
             targets: ["cothon"]
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.4.0")),
-        .package(name: "SwiftSyntax", url: "https://github.com/apple/swift-syntax.git", .exact("0.50400.0")),
+        .package(
+            url: "https://github.com/apple/swift-argument-parser",
+            .upToNextMinor(from: "0.4.0")
+        ),
+        .package(
+            name: "SwiftSyntax",
+            url: "https://github.com/apple/swift-syntax.git",
+            .exact("0.50400.0")
+        ),
     ],
     targets: [
         .target(
