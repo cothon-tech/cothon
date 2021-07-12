@@ -20,7 +20,7 @@ struct QualityGate {
             let filesLongerThan400lines = cothon.filesInfos.filter { $0.numberOfLines > 400 }
             expect(filesLongerThan400lines.count == 0,
                    severity: .major,
-                   description: "Files should not be bigger than 400 lines")
+                   description: "Files should not be bigger than 400 lines of code")
         }
     }
 }
