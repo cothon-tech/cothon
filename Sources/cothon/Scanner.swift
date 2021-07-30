@@ -1,7 +1,7 @@
 import Foundation
 import SwiftSyntax
 
-struct FileInfo {
+struct FileInfo: Codable {
     let lines: [String]
     
     var numberOfLines: Int {

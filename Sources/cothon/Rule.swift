@@ -13,7 +13,7 @@ struct Rule {
 }
 
 struct QualityGate {
-    let execute: (Cothon) -> ()
+    let execute: (CothonState) -> ()
     
     static func filesShorterThan400Lines() -> Self {
         .init { cothon in
